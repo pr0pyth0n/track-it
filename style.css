@@ -1,0 +1,233 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.points {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.assignments {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.assignment-input {
+  width: 80%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-input input,
+.assignment-input select {
+  width: calc(100% - 10px);
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.assignment-input button {
+  width: 100%;
+  padding: 10px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.assignment-input button:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.assignment-list {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-left: 90px;
+}
+
+.assignment-card {
+  width: calc(50% - 5px);
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.assignment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar {
+  width: 30%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.sidebar button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.sidebar button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+.counters {
+  margin-top: 20px;
+}
+
+
+.left {
+  width: 45%;
+  padding: 20px 30px;
+  /* Adjust the left padding as needed */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.right {
+  float: right;
+  /* Existing styles */
+  width: 45%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* Existing light mode styles */
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .header {
+  background-color: #d9534f;
+}
+
+.dark-mode .assignments,
+.dark-mode .assignment-input,
+.dark-mode .assignment-card,
+.dark-mode .theme-button,
+.dark-mode .sidebar,
+.dark-mode .sidebar button {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .assignment-input input,
+.dark-mode .assignment-input select,
+.dark-mode .sidebar button {
+  border: 1px solid #777;
+}
+
+.dark-mode .assignment-input button,
+.dark-mode .assignment-input button:hover,
+.dark-mode .sidebar button:hover,
+.dark-mode .theme-button,
+.dark-mode .theme-button:hover {
+  background-color: #d9534f;
+  color: #fff;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.dark-mode button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d9534f;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dark-mode .button:hover {
+    background-color: #d9534f;
+}
+
+.assignment-card {
+    /* Existing styles */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.assignment-card.fade-out {
+    transform: translateX(100%);
+    opacity: 0;
+}
