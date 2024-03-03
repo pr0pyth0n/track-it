@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track-It</title>
+  <link id="stylesheet" rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Track-It</h1>
+            <div class="points" id="pointCounter">Total Points: <span id="totalPoints">0</span></div>
+        </div>
+        <div class="assignments">
+            <div class="assignment-input">
+                <input type="text" id="assignmentName" placeholder="Enter assignment name">
+                <select id="assignmentType">
+                    <option value="test">Test</option>
+                    <option value="quiz">Quiz</option>
+                    <option value="assignment">Assignment</option>
+                </select>
+                <select id="subject">
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                    <option value="ela">ELA</option>
+                    <option value="history">History</option>
+                    <option value="other">Other</option>
+                </select>
+                <p><button onclick="addAssignment()">Add Assignment</button></p>
+              <button onclick="resetAssignments()">Reset assignments</button>
+            </div>
+            <div class="assignment-list" id="assignmentList"></div>
+        </div>
+        <div class="sidebar">
+            <div class="gamble-buttons" id="gamblebuttons">
+                <button onclick="gamblePrompt()">Gamble Points</button>
+            </div>
+            <br>
+            <div class="theme-button" id="themebuttons">
+                <button onclick="changeTheme()">Change Theme</button>
+            </div>
+            <br>
+            <div class="rps-button" id="rpsbuttons">
+                <button onclick="window.location.href='rps.html';">Play Rock-Paper-Scissors</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
